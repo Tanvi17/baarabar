@@ -1,6 +1,13 @@
 #include "transformer.hpp"
 #include <unistd.h>
 
+// TODO:
+// 1. Complete Matrix multiplication with Softmax function
+// 2. Parallelize MM across threads
+// 3. Parallelizze CUDA function across CUDA threads
+
+
+
 void ConstantInit(float *data, int size, float val) {
     for (int i = 0; i < size; ++i) {
         data[i] = val;
